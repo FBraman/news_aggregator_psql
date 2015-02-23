@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News Page</title>
+  </head>
+
+  <body>
+    <h1>News</h1>
+
+    <ul>
+      <% all_the_news.each do |story| %>
+        <li>Story: <a href="<%=story["url"]%>"><%= story["title"] %></a>
+        <%=story["description"]%></li>
+      <% end %>
+    </ul>
+
+    <p><a href="/articles/new">whats the slack jack? ... share and enjoy</a></p>
+
+
+  </body>
+</html>
